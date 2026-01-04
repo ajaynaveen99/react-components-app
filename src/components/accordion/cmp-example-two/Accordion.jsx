@@ -1,5 +1,4 @@
-
-import Question from "./Question"; // separate component
+import  Question from "./Question";
 
 // our questions data
 const questions = [

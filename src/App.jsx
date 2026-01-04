@@ -1,5 +1,5 @@
-import Accordion from "./components/Accordion";
-import AccordionApp from "./cmp-example-two/Accordion";
+import Accordion from "./components/accordion/Accordion.jsx";
+import AccordionApp from "./components/accordion/cmp-example-two/Accordion.jsx";
 import { Routes, Route, Link } from "react-router-dom";
 import data from "./data";
 import "./index.css";
