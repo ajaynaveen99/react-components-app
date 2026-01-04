@@ -1,5 +1,7 @@
+import Home from "./components/Home.jsx";
 import Accordion from "./components/accordion/Accordion.jsx";
 import AccordionApp from "./components/accordion/cmp-example-two/Accordion.jsx";
+import ButtonGroup from "./components/custom_button_group/ButtonGroup.jsx";
 import { Routes, Route, Link } from "react-router-dom";
 import data from "./data";
 import "./index.css";
@@ -7,20 +9,27 @@ import "./index.css";
 function App() {
   return (
     <>
-      <nav>
+        <hr />
+    <div className="components-app"><h3>Choose Your Component</h3></div>
+
+      <nav className="nav-bar">
         <ul>
+          <li><Link to="/">Home</Link></li>
           <li>
-            <Link to="/">Accordion Example-one</Link>
+            <Link to="/accordion">Accordion</Link>
           </li>
           <li>
-            <Link to="/example-two">Accordion Example-two</Link>
+           <Link to="/button-group">Button Group</Link>
           </li>
         </ul>
       </nav>
+      <hr />
 
       <Routes>
-        <Route path="/" element={<Accordion items={data} />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/accordion" element={<Accordion items={data} />} />
         <Route path="/example-two" element={<AccordionApp />} />
+        <Route path="/button-group" element={<ButtonGroup />} />
       </Routes>
     </>
   );

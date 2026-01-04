@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Question.css';
 
 function Question({ title, info }) {
   // local state for each question
