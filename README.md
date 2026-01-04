@@ -11,7 +11,7 @@ A responsive accordion component built with React. This project demonstrates col
 
 ## Live Demo
 
-[https://accordion-app-project.netlify.app/]
+[https://react-app-components.netlify.app/]
 
 
 ## Getting Started
