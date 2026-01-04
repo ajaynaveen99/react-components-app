@@ -10,10 +10,10 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Accordion Example 1</Link>
+            <Link to="/">Accordion Example-one</Link>
           </li>
           <li>
-            <Link to="/example-two">Accordion Example 2</Link>
+            <Link to="/example-two">Accordion Example-two</Link>
           </li>
         </ul>
       </nav>
