@@ -4,6 +4,7 @@ import AccordionApp from "./components/accordion/cmp-example-two/Accordion.jsx";
 import ButtonGroup from "./components/custom_button_group/ButtonGroup.jsx";
 import Paginate from "./components/paginator/Paginate.jsx";
 import { Routes, Route, Link } from "react-router-dom";
+import ProgressBar from "./components/ProgressBars/Progress.jsx";
 import data from "./data";
 import "./index.css";
 
@@ -25,6 +26,9 @@ function App() {
           <li>
            <Link to="/paginator">Paginator</Link>
           </li>
+          <li>
+            <Link to="/progress-bar">Progress Bar</Link>
+          </li>
         </ul>
       </nav>
       <hr />
@@ -35,6 +39,7 @@ function App() {
         <Route path="/example-two" element={<AccordionApp />} />
         <Route path="/button-group" element={<ButtonGroup />} />
         <Route path="/paginator" element={<Paginate />} />
+        <Route path="/progress-bar" element={<ProgressBar />} />
       </Routes>
     </>
   );
