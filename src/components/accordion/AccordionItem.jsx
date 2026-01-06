@@ -10,8 +10,8 @@ function AccordionItem({title, content, isOpen, onClick }) {
           {title}
         </button>
       </h2>
-
-      <div className={`accordion-collapse collapse ${isOpen ? "show" : ""}`}>
+      
+            <div className={`accordion-collapse collapse ${isOpen ? "show" : ""}`}>
         <div className="accordion-body">
           {content}
         </div>
