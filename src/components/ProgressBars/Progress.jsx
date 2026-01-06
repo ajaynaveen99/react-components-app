@@ -20,7 +20,7 @@ export default function ProgressBar() {
       {progress.map((value) => (
             <div
             style={{
-              height: "20px",
+              height: "25px",
               border:" 3px solid #d3cdcdff",
               borderRadius: "10px",
               background: "#ddddddff",
@@ -33,7 +33,7 @@ export default function ProgressBar() {
               style={{
                 height: "100%",
                 width: `${value}%`,
-                fontWeight: "bold",
+                fontWeight: "10px",
                 color: "solid",
                 background: "#02ff24ff",
                 transition: "width 1.9s ease",
