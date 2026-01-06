@@ -1,28 +1,40 @@
-# Accordion App
+# React Components App
 
-A responsive accordion component built with React. This project demonstrates collapsible content sections with smooth animations and accessibility features.
+A collection of reusable React components showcasing modern UI patterns and best practices. This project provides a library of well-documented, production-ready components.
 
 ## Features
 
-- Smooth expand/collapse animations
-- Keyboard navigation support
-- Mobile-friendly design
-- Reusable accordion component
+- Modular component architecture
+- TypeScript support
+- Comprehensive component documentation
+- Storybook integration for component showcase
+- Full test coverage
 
 ## Live Demo
 
 [https://react-app-components.netlify.app/]
-
 
 ## Getting Started
 
 ```bash
 npm install
 npm run dev
+npm run storybook
 ```
 
 ## Technologies
 
-- React
-- CSS3
-- JavaScript
+- React 18+
+- TypeScript
+- CSS Modules
+- Storybook
+- Jest & React Testing Library
+
+## Available Components
+
+accordion
+custom_button_group
+paginator 
+progressBars
+home
+
