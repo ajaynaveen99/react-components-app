@@ -9,7 +9,6 @@ function Question({ title, info }) {
   const toggle = () => {
     setIsActive(!isActive);
   };
-
   return (
     <div className="question">
       <header onClick={toggle}>
