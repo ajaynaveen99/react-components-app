@@ -6,6 +6,7 @@ import Paginate from "./components/paginator/Paginate.jsx";
 import { Routes, Route, Link } from "react-router-dom";
 import ProgressBarsDemo from "./components/ProgressBars/Progress.jsx";
 import ProgressBar from "./components/ProgressBars/ProgressBar"
+import CheckBox from "./components/checkbox/CheckBox.jsx";
 import data from "./data";
 import "./index.css";
 
@@ -28,9 +29,9 @@ function App() {
             <Link to="/paginator">Paginator</Link>
           </li>
           <li>
-            {/* <Link to="/progress-bar">Progress Bar</Link> */}
             <Link to="./bar">ProgressBar</Link>
           </li>
+          <li>    <Link to="/checkbox">CheckBox</Link></li>
         </ul>
       </nav>
       <hr />
@@ -43,6 +44,7 @@ function App() {
         <Route path="/paginator" element={<Paginate />} />
         <Route path="/progress-bar" element={<ProgressBarsDemo />} />
         <Route path="bar" element={<ProgressBar/>}/>
+        <Route path="/checkbox" element={<CheckBox/>}/>
       </Routes>
     </>
   );
