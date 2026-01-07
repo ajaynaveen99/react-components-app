@@ -1,0 +1,22 @@
+.radio-btns{
+    margin:20px 700px;
+    text-align:center;
+    display: flex;
+    gap: 20px;
+
+}
+input[type="radio"]{
+    width:20px;
+    height:20px;
+    cursor: pointer;
+}
+.radio-btns label{
+    font-size:20px;
+    cursor: pointer;
+    margin-left:5px;
+    margin-bottom:25px;
+}
+h2{
+    text-align: center;
+   
+}
