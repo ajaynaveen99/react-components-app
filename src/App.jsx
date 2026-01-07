@@ -7,6 +7,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import ProgressBarsDemo from "./components/ProgressBars/Progress.jsx";
 import ProgressBar from "./components/ProgressBars/ProgressBar"
 import CheckBox from "./components/checkbox/CheckBox.jsx";
+import RadioButtons from "./components/radioGroup/RadioButtons.jsx";
 import data from "./data";
 import "./index.css";
 
@@ -29,9 +30,11 @@ function App() {
             <Link to="/paginator">Paginator</Link>
           </li>
           <li>
-            <Link to="./bar">ProgressBar</Link>
+            <Link to="/bar">ProgressBar</Link>
           </li>
-          <li>    <Link to="/checkbox">CheckBox</Link></li>
+          <li><Link to="/checkbox">CheckBox</Link></li>
+          <li><Link to="/radio">Radio Buttons</Link></li>
+
         </ul>
       </nav>
       <hr />
@@ -45,6 +48,7 @@ function App() {
         <Route path="/progress-bar" element={<ProgressBarsDemo />} />
         <Route path="bar" element={<ProgressBar/>}/>
         <Route path="/checkbox" element={<CheckBox/>}/>
+        <Route path="/radio" element={<> <RadioButtons/> </>} />
       </Routes>
     </>
   );
