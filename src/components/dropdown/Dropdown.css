@@ -1,0 +1,49 @@
+.Dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.Dropdown-btn {
+  padding: 10px 14px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.Dropdown-menu {
+  position: absolute;   
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  margin-top: 4px;
+ min-width: 200px;
+}
+
+.Dropdown-item {
+  padding: 8px 12px;
+}
+
+.Dropdown-item:hover {
+  background: #b4afaf;
+  color: white;
+}
+.icon{
+  float: right;
+
+}
+.dropdown-btn:focus {
+  outline: none;
+}
+.dropdown-container {
+    margin: 200px auto;
+ 
+    text-align: center;
+
+}
+
+

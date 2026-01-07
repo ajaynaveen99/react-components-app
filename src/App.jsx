@@ -8,6 +8,7 @@ import ProgressBarsDemo from "./components/ProgressBars/Progress.jsx";
 import ProgressBar from "./components/ProgressBars/ProgressBar"
 import CheckBox from "./components/checkbox/CheckBox.jsx";
 import RadioButtons from "./components/radioGroup/RadioButtons.jsx";
+import Dropdown from "./components/dropdown/Dropdown.jsx";
 import data from "./data";
 import "./index.css";
 
@@ -34,6 +35,7 @@ function App() {
           </li>
           <li><Link to="/checkbox">CheckBox</Link></li>
           <li><Link to="/radio">Radio Buttons</Link></li>
+          <li><Link to="/dropdown">Dropdown</Link></li>
 
         </ul>
       </nav>
@@ -49,6 +51,7 @@ function App() {
         <Route path="bar" element={<ProgressBar/>}/>
         <Route path="/checkbox" element={<CheckBox/>}/>
         <Route path="/radio" element={<> <RadioButtons/> </>} />
+        <Route path="/dropdown" element={<Dropdown/>}/>
       </Routes>
     </>
   );
