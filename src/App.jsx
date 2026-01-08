@@ -34,7 +34,7 @@ function App() {
           <li>
             <Link to="/bar">ProgressBar</Link>
           </li>
-         <li><Link to="/child-checkbox">Child Checkbox</Link></li>
+         <li><Link to="/child-checkbox">Checkbox</Link></li>
           <li><Link to="/radio">RadioButtons</Link></li>
           <li><Link to="/dropdown">Dropdown</Link></li>
 
