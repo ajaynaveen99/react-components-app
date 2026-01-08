@@ -7,6 +7,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import ProgressBarsDemo from "./components/ProgressBars/Progress.jsx";
 import ProgressBar from "./components/ProgressBars/ProgressBar"
 import CheckBox from "./components/checkbox/CheckBox.jsx";
+import ChildCheckbox from "./components/checkbox/checkboxDemo/ChildCheckbox.jsx";
 import RadioButtons from "./components/radioGroup/RadioButtons.jsx";
 import Dropdown from "./components/dropdown/Dropdown.jsx";
 import data from "./data";
@@ -33,8 +34,8 @@ function App() {
           <li>
             <Link to="/bar">ProgressBar</Link>
           </li>
-          <li><Link to="/checkbox">CheckBox</Link></li>
-          <li><Link to="/radio">Radio Buttons</Link></li>
+         <li><Link to="/child-checkbox">Child Checkbox</Link></li>
+          <li><Link to="/radio">RadioButtons</Link></li>
           <li><Link to="/dropdown">Dropdown</Link></li>
 
         </ul>
@@ -48,10 +49,11 @@ function App() {
         <Route path="/button-group" element={<ButtonGroup />} />
         <Route path="/paginator" element={<Paginate />} />
         <Route path="/progress-bar" element={<ProgressBarsDemo />} />
-        <Route path="bar" element={<ProgressBar/>}/>
-        <Route path="/checkbox" element={<CheckBox/>}/>
-        <Route path="/radio" element={<> <RadioButtons/> </>} />
-        <Route path="/dropdown" element={<Dropdown/>}/>
+        <Route path="bar" element={<ProgressBar />} />
+        <Route path="/checkbox" element={<CheckBox />} />
+        <Route path="/child-checkbox" element={<ChildCheckbox />} />
+        <Route path="/radio" element={<> <RadioButtons /> </>} />
+        <Route path="/dropdown" element={<Dropdown />} />
       </Routes>
     </>
   );
