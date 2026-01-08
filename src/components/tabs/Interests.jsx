@@ -1,36 +1,31 @@
 import React from "react";
 
 export default function Interests({ data, setData }) {
-  const interests = data.interests;
+
+  const OPTIONS = ["java", "JavaScript", "Python"];
+
+
+  const selected = data.interests;
 
   function handleChange(value) {
-    setData((prev) => {
-      if (prev.interests.includes(value)) {
-        // remove interest
-        return {
-          ...prev,
-          interests: prev.interests.filter((item) => item !== value),
-        };
-      } else {
-        // add interest
-        return {
-          ...prev,
-          interests: [...prev.interests, value],
-        };
-      }
-    });
+    setData((prev) => ({
+      ...prev,
+      interests: prev.interests.includes(value)
+        ? prev.interests.filter((item) => item !== value) // remove
+        : [...prev.interests, value], // add
+    }));
   }
 
   return (
     <div>
       <h3>Select Interests</h3>
 
-      {interests.map((interest, index) => (
+      {OPTIONS.map((interest, index) => (
         <div key={index}>
           <input
             type="checkbox"
             value={interest}
-            checked={interests.includes(interest)}
+            checked={selected.includes(interest)}
             onChange={() => handleChange(interest)}
           />
           <label>{interest}</label>
