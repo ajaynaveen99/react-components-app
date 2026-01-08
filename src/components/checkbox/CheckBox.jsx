@@ -2,6 +2,7 @@ import React from 'react'
 import  {useState} from 'react';
 import './CheckBox.css';
 import Input from './CustomCheckBox'
+import {Link} from 'react-router-dom';
 
 
 export default function CheckBox() {
@@ -12,6 +13,7 @@ export default function CheckBox() {
   };
 
   return (<>
+      <Link to="/child-checkbox">Child-Parent Checkbox</Link>
     <h1>Custom Checkbox</h1>
     <div>
       <Input
