@@ -1,18 +1,14 @@
-import React from "react";
-
 export default function Interests({ data, setData }) {
-
   const OPTIONS = ["java", "JavaScript", "Python"];
 
-
-  const selected = data.interests;
+  const selected = data.interests || [];
 
   function handleChange(value) {
     setData((prev) => ({
       ...prev,
       interests: prev.interests.includes(value)
-        ? prev.interests.filter((item) => item !== value) // remove
-        : [...prev.interests, value], // add
+        ? prev.interests.filter((item) => item !== value)
+        : [...prev.interests, value],
     }));
   }
 
