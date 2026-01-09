@@ -10,6 +10,7 @@ import CheckBox from "./components/checkbox/CheckBox.jsx";
 import ChildCheckbox from "./components/checkbox/checkboxDemo/ChildCheckbox.jsx";
 import RadioButtons from "./components/radioGroup/RadioButtons.jsx";
 import Dropdown from "./components/dropdown/Dropdown.jsx";
+import TabForm from "./components/tabs/TabForm.jsx";
 import data from "./data";
 import "./index.css";
 
@@ -37,6 +38,7 @@ function App() {
          <li><Link to="/child-checkbox">Checkbox</Link></li>
           <li><Link to="/radio">RadioButtons</Link></li>
           <li><Link to="/dropdown">Dropdown</Link></li>
+          <li><Link to="/tabs">TabForm</Link></li>
 
         </ul>
       </nav>
@@ -54,6 +56,7 @@ function App() {
         <Route path="/child-checkbox" element={<ChildCheckbox />} />
         <Route path="/radio" element={<> <RadioButtons /> </>} />
         <Route path="/dropdown" element={<Dropdown />} />
+        <Route path="/tabs" element={<TabForm />} />
       </Routes>
     </>
   );
