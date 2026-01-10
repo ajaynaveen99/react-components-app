@@ -8,19 +8,23 @@
     cursor: pointer;
 
 }
-.tab-name{
-    border:1px solid gray;
-    padding: 10px;
+.active-tab{
+border-bottom: 4px solid rgb(18, 238, 209);
+    padding: 1px;
+    margin:10px;
+    font-size: 20px;
+    
 }
 .tab-form{
    
     width: 50%;
+    
 }
 .active-component{
     border: 2px solid rgb(32, 32, 34);
     padding: 10px;
     border-radius: 5px;
-    height: 250px;
+  
    
     font-weight: bold;
 }
@@ -28,4 +32,23 @@
     display: block;
     margin-bottom: 10px;
 
+}
+span{
+    color:red;
+    display:block
+}
+.pagination-btn{
+    display: flex;
+    gap:20px
+}
+.tab-form>button{
+   margin:5px;
+   background-color:rgb(132, 139, 139);
+   border-radius:5px;
+   text-align:end;
+   margin-left:20px;
+}
+.submit{
+    margin-left:280px !important;
+    background-color: #8ad697 !important;
 }

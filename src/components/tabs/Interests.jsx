@@ -1,32 +1,46 @@
-export default function Interests({ data, setData }) {
-  const OPTIONS = ["java", "JavaScript", "Python"];
+export default function Interests({ data, setData,error }) {
+ // const OPTIONS = ["java", "JavaScript", "Python"];
 
-  const selected = data.interests || [];
+  const selected = data.interests;
 
-  function handleChange(value) {
+  function handleChange(e) {
     setData((prev) => ({
       ...prev,
-      interests: prev.interests.includes(value)
-        ? prev.interests.filter((item) => item !== value)
-        : [...prev.interests, value],
+      interests: e.target.checked
+        ? [...prev.interests, e.target.name]:
+        prev.interests.filter((item) => item !== e.target.name)
     }));
   }
-
+   console.log(data)
   return (
     <div>
       <h3>Select Interests</h3>
 
-      {OPTIONS.map((interest, index) => (
-        <div key={index}>
+    <div>
           <input
             type="checkbox"
-            value={interest}
-            checked={selected.includes(interest)}
-            onChange={() => handleChange(interest)}
+            name="Java" 
+            checked={selected.includes("Java")}
+            onChange={handleChange}
           />
-          <label>{interest}</label>
+          <label>java</label>
+            <input
+            type="checkbox"
+            name="JavaScript" 
+            checked={selected.includes("JavaScript")}
+            onChange={handleChange}
+          />
+          <label>JavaScript</label>
+            <input
+            type="checkbox"
+            name="Python" 
+            checked={selected.includes("Python")}
+            onChange={handleChange}
+          />
+          <label>Python</label>
         </div>
-      ))}
+        {error.interests &&<span>{error.interests}</span>}
+
     </div>
   );
 }
