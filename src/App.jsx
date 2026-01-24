@@ -13,6 +13,7 @@ import Dropdown from "./components/dropdown/Dropdown.jsx";
 import TabForm from "./components/tabs/TabForm.jsx";
 import data from "./data";
 import "./index.css";
+import TodoListApp from "./components/todolist/TodoListApp";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <li><Link to="/radio">RadioButtons</Link></li>
           <li><Link to="/dropdown">Dropdown</Link></li>
           <li><Link to="/tabs">TabForm</Link></li>
+          <li><Link to ="./todoList">TodoList</Link></li>
 
         </ul>
       </nav>
@@ -57,6 +59,7 @@ function App() {
         <Route path="/radio" element={<> <RadioButtons /> </>} />
         <Route path="/dropdown" element={<Dropdown />} />
         <Route path="/tabs" element={<TabForm />} />
+        <Route path="/todoList" element={<TodoListApp/>}/>
       </Routes>
     </>
   );
