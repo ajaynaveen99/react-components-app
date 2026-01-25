@@ -40,7 +40,7 @@ function App() {
           <li><Link to="/radio">RadioButtons</Link></li>
           <li><Link to="/dropdown">Dropdown</Link></li>
           <li><Link to="/tabs">TabForm</Link></li>
-          <li><Link to ="./todoList">TodoList</Link></li>
+          <li><Link to ="/todoList">TodoList</Link></li>
 
         </ul>
       </nav>
