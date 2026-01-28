@@ -14,6 +14,7 @@ import TabForm from "./components/tabs/TabForm.jsx";
 import data from "./data";
 import "./index.css";
 import TodoListApp from "./components/todolist/TodoListApp";
+import OtpApp from "./components/otpInput/OtpApp.jsx";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <li><Link to="/dropdown">Dropdown</Link></li>
           <li><Link to="/tabs">TabForm</Link></li>
           <li><Link to ="/todoList">TodoList</Link></li>
+          <li><Link to="/otpInput">OtpInput</Link></li>
 
         </ul>
       </nav>
@@ -60,6 +62,7 @@ function App() {
         <Route path="/dropdown" element={<Dropdown />} />
         <Route path="/tabs" element={<TabForm />} />
         <Route path="/todoList" element={<TodoListApp/>}/>
+        <Route path="otpInput" element={<OtpApp/>}/>
       </Routes>
     </>
   );
