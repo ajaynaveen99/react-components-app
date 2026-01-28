@@ -9,6 +9,17 @@
 }
 .input-container{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 
+}
+.otp-gen,.otp-submit{
+    text-align: center;
+   background:rgb(37, 247, 247);
+    display: block;
+     margin: 10px auto;
+    
+    border-radius: 10px;
+}
+.otp-submit{
+    background:rgb(37, 247, 137);
 }
