@@ -13,10 +13,20 @@ export default function OtpApp() {
  function handleChange(value,index){
     if(isNaN(value)) return
 const newArr=[...otp];
-newArr[index]=value.slice(-1);
+const newValue=value.trim();
+newArr[index]=newValue.slice(-1);
 setOtp(newArr)
-    inputRef.current[index+1]?.focus();
+  newValue && inputRef.current[index+1]?.focus();
 console.log(newArr)
+
+}
+function handleKeyDown(e,index){
+    if(!e.target.value && e.key==="Backspace"){
+    
+        inputRef.current[index-1]?.focus();
+    }
+
+
 
 }
   return (
@@ -28,6 +38,7 @@ console.log(newArr)
     value={otp[index]}
     onChange={(e)=>handleChange(e.target.value,index)}
     ref={(input)=>inputRef.current[index]=input}
+    onKeyDown={(e)=>handleKeyDown(e,index)}
 
    />
 
