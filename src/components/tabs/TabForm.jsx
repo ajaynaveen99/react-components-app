@@ -11,9 +11,9 @@ import Message from './Message.jsx';
 export default function TabForm() {
 
   const [data, setData] = useState({
-    name: "Ajay",
-    number: "6303629099",
-    email: "ajaynaveen337@gmail.com",
+    name: "",
+    number: "",
+    email: "",
     interests: ["Java", "JavaScript", "Python"],
     level: ["Fresher", "Experiance"],
     selectedLevel: ""
