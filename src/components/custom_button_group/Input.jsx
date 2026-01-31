@@ -7,7 +7,7 @@ export default function Input(props) {
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="custom-input"
+      className="custom-"
     />
   );
 }

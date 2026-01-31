@@ -6,10 +6,7 @@ import { useState } from 'react';
 import './Tabs.css';
 
 import Message from './Message.jsx';
-
-
 export default function TabForm() {
-
   const [data, setData] = useState({
     name: "",
     number: "",
