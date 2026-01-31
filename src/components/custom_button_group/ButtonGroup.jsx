@@ -55,7 +55,7 @@ export default function ButtonGroup() {
       <br />
 
 
-       <h2>Simple Custom Input</h2>
+       <h2 className="input-content">Simple Custom Input</h2>
 
       <Input
         placeholder="Enter your name"
